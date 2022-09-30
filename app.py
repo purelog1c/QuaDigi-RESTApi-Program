@@ -13,7 +13,7 @@ UPLOAD_FOLDER = os.getcwd()+"\\UploadedFiles"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024
  
-ALLOWED_EXTENSIONS = set(['csvs'])
+ALLOWED_EXTENSIONS = set(['csv'])
  
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
